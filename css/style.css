@@ -2,8 +2,22 @@
 
 .box {
 
-    width: 200px;
-    height: 200px;
-    margin: 20px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: blue;
+
+
+    transition-property: background-color, border-radius;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+.box:hover {
+
+    background-color: orange;
+    border-radius: 50%;
 }
