@@ -8,14 +8,12 @@
 
     <style>
 
-        body {
-
-        }
 
         #container { /* Container pai tag main */
 
+            
             height: 500px;
-            padding: 20px;
+            padding: 16px;
             background-color: rgb(235, 206, 154);
 
             display: flex;
@@ -30,13 +28,13 @@
             align-items: center;
             /* flex-wrap: nowrap; */
             /* flex-wrap: wrap-reverse; */
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             align-content: center;
             /* align-content: flex-end; */
             /* align-content: center; */
             row-gap: 10px;
             /* gap: 20px; */
-            gap: 40px;
+            column-gap: 30px;
 
         }
 
@@ -49,6 +47,14 @@
             text-align: center;
             font-weight: bolder;
             font-size: 2em;
+
+            order: 0;
+            /* flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto; */
+
+            flex: 0 1 auto;
+            align-self: flex-start;
         }
 
         .bloco2 {
@@ -60,6 +66,14 @@
             text-align: center;
             font-weight: bolder;
             font-size: 2em;
+
+            order: 0;
+           /* flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto; */
+
+            flex: 0 0 auto;
+            
         }
 
         .bloco3 {
@@ -71,9 +85,17 @@
             text-align: center;
             font-weight: bolder;
             font-size: 2em;
+
+            order: 0;
+           /* flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto; */
+
+            flex: 0 0 auto;
+            align-self: flex-end;
         }
 
-        .bloco4 {
+        /* .bloco4 {
 
             width: 150px;
             height: 150px;
@@ -148,7 +170,7 @@
             text-align: center;
             font-weight: bolder;
             font-size: 2em;
-        }
+        } */
 
     </style>
 </head>
@@ -158,13 +180,13 @@
         <div class="bloco1">1</div>
         <div class="bloco2">2</div>
         <div class="bloco3">3</div>
-        <div class="bloco4">4</div>
+        <!-- <div class="bloco4">4</div>
         <div class="bloco5">5</div>
         <div class="bloco6">6</div>
         <div class="bloco7">7</div>
         <div class="bloco8">8</div>
         <div class="bloco9">9</div>
-        <div class="bloco10">10</div>
+        <div class="bloco10">10</div> -->
     </main>
 </body>
 </html>
